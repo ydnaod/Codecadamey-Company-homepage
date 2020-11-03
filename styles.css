@@ -1,0 +1,21 @@
+* {
+    font-family: 'Proxima Nova';
+    margin:0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.grid {
+    display: grid;
+    grid-template: repeat(6, 1fr) / repeat(12, 1fr);
+}
+
+header {
+    grid-row: 1 / 1;
+    grid-column: 1 / span 12;
+    display: flex;
+    justify-items: center;
+    justify-content: center;
+    font-size: 4em;
+    font-weight: bold;
+}
