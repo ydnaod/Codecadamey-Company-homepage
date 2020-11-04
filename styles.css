@@ -7,7 +7,7 @@
 
 .grid {
     display: grid;
-    grid-template: repeat(6, 1fr) / repeat(12, 1fr);
+    grid-template: repeat(10, 1fr) / repeat(12, 1fr);
 }
 
 header {
@@ -34,13 +34,55 @@ ul {
     list-style-type: none;
     display: flex;
     justify-content: center;
+    align-items: center;
     flex-direction: row;
 }
 
 li {
-    padding: .5em 1em .5em 1em;
+    padding: .5em 2em .5em 2em;
 }
 
 .mission {
     background-image: url("communism2.png");
+    background-position: center;
+    grid-row: 3 / 5;
+    grid-column: 1 / span 12;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 1.5em;
+    color: white;
+}
+
+img {
+    object-fit: contain;
+    max-width: 40%;
+}
+
+h2{
+    grid-row: 5 / 6;
+    grid-column: 1 / span 12;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.portfolio {
+    grid-row: 6 / 8;
+    grid-column: 1 / span 12;
+    display: grid;
+    grid-template-areas: 
+    "china vietnam"
+    "laos cuba";
+    justify-content: center;
+}
+.portfolioBox{
+    display: inline-flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1.5em;
+}
+.portfolio > #china {
+    
 }
